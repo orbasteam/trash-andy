@@ -8,5 +8,7 @@ deploy:
   region: "ap-northeast-1"
   runtime: "python3.6"
   handler_name: "lambda_handler"
-  on:
-    branch: master
+
+branches:
+  only:
+    - master
