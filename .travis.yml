@@ -2,6 +2,9 @@ language: python
 
 python: 3.6
 
+stages:
+  - deploy
+
 deploy:
   provider: lambda
   function_name: "slackbot"
