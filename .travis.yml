@@ -1,0 +1,8 @@
+deploy:
+  provider: lambda
+  function_name: "slackbot"
+  region: "ap-northeast-1"
+  runtime: "python3.6"
+  handler_name: "lambda_handler"
+  on:
+    branch: master
