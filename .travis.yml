@@ -12,6 +12,7 @@ deploy:
   provider: lambda
   function_name: "slackbot"
   region: "ap-northeast-1"
+  role: "arn:aws:iam::493287198862:role/LambdaBasicExecutionRole"
   runtime: "python3.6"
   handler_name: "lambda_handler"
 
