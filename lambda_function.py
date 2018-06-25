@@ -44,6 +44,7 @@ def post_message(word, channel_id):
     print(word, channel_id)
     data = urllib.parse.urlencode(
         (
+            ("link_names", 1),
             ("token", BOT_TOKEN),
             ("channel", channel_id),
             ("text", word)
